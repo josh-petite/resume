@@ -1,0 +1,13 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0%; }
+  .main-container .horizontal-nav {
+    flex: 1;
+    background-color: #000; }
+  .main-container .vertical-nav {
+    flex: 0;
+    background-color: #ccc; }
+  .main-container .body {
+    flex: 1;
+    background-color: #777; }

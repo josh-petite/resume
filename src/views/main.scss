@@ -1,14 +1,18 @@
 .site-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
     
     .horizontal-nav {
-        flex: 1;
+        flex: 0;
     }
     
     .main-container {
         display: flex;
         flex-direction: row;
+        flex: 1;
+        top: 58px;
         
         .vertical-nav {
             flex: 0;
@@ -20,7 +24,7 @@
         
         .body {
             flex: 4;
-            background-color: #773;
+            padding: 15px;
         }
     }
 }

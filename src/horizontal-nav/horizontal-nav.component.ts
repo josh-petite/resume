@@ -4,4 +4,8 @@ import {Component} from 'angular2/core';
     selector: 'horizontal-nav',
     templateUrl: 'src/horizontal-nav/view.html'
 })
-export class HorizontalNavComponent {}
+export class HorizontalNavComponent {
+    navHome() {
+        
+    }
+}

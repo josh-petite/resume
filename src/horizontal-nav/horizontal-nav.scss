@@ -3,7 +3,7 @@
 .horizontal-nav-container {
     display: flex;
     flex-grow: 1;
-    padding: 0 20px;
+    padding: 6px 20px;
     background-color: $horizontal-nav-background;
     align-content: space-between;
     align-items: center;
@@ -26,9 +26,14 @@
         align-content: flex-end;
         justify-content: center;
         align-items: center;
+        margin: 0;
         
         li {
             padding-left: 0.5em;
+            
+            a {
+                margin-top: 0;
+            }
         }
     }
 }

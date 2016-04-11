@@ -7,7 +7,12 @@
             <vertical-nav></vertical-nav>
         </div>
         <div class="body">
-            <h1>Hi I'm {{profile.name}}</h1>    
+            <div class="contents-container">
+                <router-outlet></router-outlet>    
+            </div>
+            <div class="twitter-feed">
+                <twitter-feed></twitter-feed>
+            </div>                            
         </div>
     </div>
 </div>

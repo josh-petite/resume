@@ -5,7 +5,9 @@ import {Component} from 'angular2/core';
     templateUrl: 'src/projects/view.html'
 })
 export class ProjectsComponent {
+    name: string = "Projects"
+    
     constructor() {
-        console.log('hello')
+        
     }
 }

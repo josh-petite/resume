@@ -1,15 +1,19 @@
 <div class="vertical-nav-container">
     <ul>
         <li class="expand-toggle">
-            <i class="fa fa-angle-double-right fa-3x"></i>
+            <i class="fa fa-angle-double-right fa-3x" [hidden]="!expanded"></i>
         </li>
         <li class="nav-item" title="Résumé">
-            <i class="fa fa-file-text-o fa-3x"></i>
-            <span [hidden]="descriptionHidden">Résumé</span>
+            <a (click)="navigateToResume()">
+                <i class="fa fa-file-text-o fa-3x"></i>
+                <span [hidden]="!expanded">Résumé</span>
+            </a>
         </li>
-        <li class="nav-item" title="Projects" (click)="navToProjects()">
-            <i class="fa fa-folder fa-3x"></i>                
-            <span [hidden]="descriptionHidden">Projects</span>            
+        <li class="nav-item" title="Projects">
+            <a (click)="navigateToProjects()">
+                <i class="fa fa-folder fa-3x"></i>                
+                <span [hidden]="!expanded">Projects</span>      
+            </a>      
         </li>
     </ul>    
 </div>

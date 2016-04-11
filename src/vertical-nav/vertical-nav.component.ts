@@ -7,13 +7,17 @@ import { Router } from 'angular2/router';
 })
 
 export class VerticalNavComponent {
-    descriptionHidden: boolean; 
+    expanded: boolean; 
     
     constructor(private _router: Router) {        
-        this.descriptionHidden = true;
+        this.expanded = false;
     }
     
-    navToProjects() {
-        this._router.navigate(['Projects', { }]);
+    navigateToProjects() {
+        this._router.navigate(['Projects']);
+    }
+    
+    navigateToResume() {
+        this._router.navigate(['Resume']);
     }
 }

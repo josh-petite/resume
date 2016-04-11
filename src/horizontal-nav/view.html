@@ -1,7 +1,27 @@
 <div class="horizontal-nav-container">
-    <div class="logo">
-        <a href="#" (click)="navHome()">Josh Petite</a>
-    </div>
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <button md-button class="md-icon-button" aria-label="Settings" (click)="clicked('Menu')">
+                <i md-icon>menu</i>
+                </button>
+                <h2>
+                    <div class="logo">
+                        <a [routerLink]="['Landing']">Josh Petite</a>
+                    </div>
+                </h2>
+                <span flex></span>
+                <button md-button class="md-icon-button" aria-label="Favorite" (click)="clicked('Favorite')">
+                    <i class="green" md-icon>favorite</i>
+                </button>
+                <button md-button class="md-icon-button" aria-label="More" (click)="clicked('Show More')">
+                    <i md-icon>more_vert</i>
+                </button>
+            </div>
+        </md-toolbar>
+    </md-content>    
+    
+    
     <nav>
         <ul class="nav-social-links">
             <li>
